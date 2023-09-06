@@ -9,3 +9,5 @@ def print_test():
 
 if __name__ == '__main__':
     print_test()
+    object_one = firstclass.FirstClass()
+    print(object_one.mytuple[1])
