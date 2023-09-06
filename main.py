@@ -10,4 +10,7 @@ def print_test():
 if __name__ == '__main__':
     print_test()
     object_one = firstclass.FirstClass()
+    y = list(object_one.mytuple)
+    y[1] = "kiwi"
+    object_one.mytuple = tuple(y)
     print(object_one.mytuple[1])
