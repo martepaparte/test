@@ -1,9 +1,11 @@
+import firstclass
 
-def print_greeting(name):
+
+def print_test():
     # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    mystery = 734_529.699
+    print(mystery)  # Press Ctrl+F8 to toggle the breakpoint.
 
 
 if __name__ == '__main__':
-    print_greeting('PyCharm')
-
+    print_test()
