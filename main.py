@@ -2,15 +2,17 @@ import firstclass
 
 
 def print_test():
-    # Use a breakpoint in the code line below to debug your script.
-    mystery = 734_529.699
-    print(mystery)  # Press Ctrl+F8 to toggle the breakpoint.
-
+    input_number = input("Please input two digit number: ")
+    try:
+        input_number = int(input_number)
+    except Exception as e:
+        print("Failed to input number: " + e)
+    try:
+        if len(str(input_number)) != 2:
+            raise ValueError("not two digits")
+    except ValueError as e:
+        print("Invalid input: " + str(e))
+        return
 
 if __name__ == '__main__':
     print_test()
-    object_one = firstclass.FirstClass()
-    y = list(object_one.mytuple)
-    y[1] = "kiwi"
-    object_one.mytuple = tuple(y)
-    print(object_one.mytuple[1])
